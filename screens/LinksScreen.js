@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { Card, Divider } from 'react-native-elements';
 import Progress_Bar from '../components/progressBar.js';
+import { Ionicons } from '@expo/vector-icons';
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
@@ -24,18 +25,18 @@ export default class LinksScreen extends React.Component {
   }
   render() {
     return (
+
+      
       <View style={styles.container}>
         <Text style={styles.title}>Bills</Text>
+
         {this.state.bills.map(bill => (
           <Card style={styles.card}>
             <Text style={styles.paragraph} key={bill}>
-              {bill}
+              {bill}.                 
+              <Ionicons name="ios-call" size={22}/>
+
             </Text>
-            <TouchableOpacity>
-              <Text style = {styles.text}>
-                Call
-              </Text>
-            </TouchableOpacity>
             <Progress_Bar/>
           </Card>
         ))}

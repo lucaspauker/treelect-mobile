@@ -1,5 +1,4 @@
 import firebase from 'firebase'
-// Initialize Firebase
 var config = {
   apiKey: "AIzaSyAn6Wcwvle2AT_OP8f3Djjwo3J1GFvT5Pw",
   authDomain: "treehacks-12978.firebaseapp.com",

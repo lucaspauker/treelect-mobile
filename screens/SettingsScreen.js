@@ -53,7 +53,6 @@ export default class SettingsScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Profile</Text>
         {this.state.user ?
           <View style={styles.container}>
             <Button

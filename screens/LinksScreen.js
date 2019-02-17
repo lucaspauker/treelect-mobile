@@ -20,20 +20,20 @@ export default class LinksScreen extends React.Component {
   constructor() {
     super();
     this.state = {
-      bills: ['Bill one', 'Bill two', 'Bill three'],
+      bills: ['CASES Act', 'Social Media Use in Clearance Investigations Act of 2019', 'To amend title 5, United States Code, to allow whistleblowers to disclose information to certain recipients'],
     }
   }
   render() {
     return (
 
-      
+
       <View style={styles.container}>
         <Text style={styles.title}>Bills</Text>
 
         {this.state.bills.map(bill => (
           <Card style={styles.card}>
             <Text style={styles.paragraph} key={bill}>
-              {bill}.                 
+              {bill}.
               <Ionicons name="ios-call" size={22}/>
 
             </Text>

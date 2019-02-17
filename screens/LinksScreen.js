@@ -25,13 +25,13 @@ export default class LinksScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Bills</Text>
-        <Card style={styles.card}>
-          {this.state.bills.map(bill => (
+        {this.state.bills.map(bill => (
+          <Card style={styles.card}>
             <Text style={styles.paragraph} key={bill}>
               {bill}
             </Text>
-          ))}
-        </Card>
+          </Card>
+        ))}
       </View>
     );
   }

@@ -10,6 +10,7 @@ import {
   Button,
 } from 'react-native';
 import { Card, Divider } from 'react-native-elements';
+import Progress_Bar from '../components/progressBar.js';
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
@@ -18,7 +19,7 @@ export default class LinksScreen extends React.Component {
   constructor() {
     super();
     this.state = {
-      bills: ['Bill one lorem ipsum dolor sit amet askdjlaskjd', 'Bill two', 'Bill three'],
+      bills: ['Bill one', 'Bill two', 'Bill three'],
     }
   }
   render() {
@@ -30,6 +31,12 @@ export default class LinksScreen extends React.Component {
             <Text style={styles.paragraph} key={bill}>
               {bill}
             </Text>
+            <TouchableOpacity>
+              <Text style = {styles.text}>
+                Call
+              </Text>
+            </TouchableOpacity>
+            <Progress_Bar/>
           </Card>
         ))}
       </View>
@@ -58,4 +65,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#34495e',
   },
-});
+  text: {
+      borderWidth: 1,
+      padding: 25,
+      borderColor: 'black',
+      backgroundColor: 'red'
+    },
+  });

@@ -9,7 +9,7 @@ import {
   View,
   Button,
 } from 'react-native';
-import fire, {auth, googleProvider, facebookProvider, twitterProvider} from '../components/fire';
+import firebase, {auth, googleProvider, facebookProvider, twitterProvider} from '../components/fire';
 
 export default class SettingsScreen extends React.Component {
     constructor() {
